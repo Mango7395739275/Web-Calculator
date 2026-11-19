@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background-color: black;
+}
+
+.calc {
+    --gap: 10px;
+    background-color: transparent;
+    width: 90%;
+    min-height: 500px;
+    flex: 1 1 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    --columns: 5;
+    flex-direction: row;
+}
+
+.numbers:not(.nuhuh) {
+    flex: 1 1 calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 10px;
+}
+
+.nuhuh {
+    width: 100%;
+    min-height: 50px;
+    border-radius: 10px;
+    pointer-events: none;
+}
