@@ -6,6 +6,8 @@ body {
     background-color: black;
 }
 
+* {font-size: xx-large;}
+
 .calc {
     --gap: 10px;
     background-color: transparent;
@@ -17,6 +19,7 @@ body {
     gap: var(--gap);
     --columns: 5;
     flex-direction: row;
+    position: relative;
 }
 
 .numbers:not(.nuhuh) {
@@ -34,5 +37,20 @@ body {
     width: 100%;
     min-height: 50px;
     border-radius: 10px;
-    pointer-events: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+    flex: 1 1 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 50%;
 }
