@@ -81,7 +81,7 @@ ac.addEventListener("click", () => {
 equal.addEventListener("click", () => {
     field.textContent = eval(field.textContent);
 
-    if (field.textContent != Number) {
+    if (field.textContent == "") {
         field.textContent = "Unexpected Error";
     }
 });
